@@ -8,7 +8,8 @@ import nltk
 from sqlalchemy import create_engine
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
-# ngrok.exe http -host-header=rewrite localhost:5000
+# ngrok.exe http -host-header=rewrite localhost:5000 -> deprecated
+# ngrok.exe http 5000
 stop_words = set(stopwords.words("english"))
 stop_words.update([
     "don't", "didn't", "doesn't", "can't", "couldn't", "could've", "i'm",
